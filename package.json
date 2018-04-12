@@ -1,0 +1,44 @@
+{
+  "name": "renovate-config-fabulator",
+  "version": "1.0.3",
+  "description": "Fabulator personal Renovate config present.",
+  "scripts": {
+    "test": "node node_modules/jest/bin/jest.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabulator/renovate-config-fabulator.git"
+  },
+  "homepage": "https://github.com/fabulator/renovate-config-fabulator",
+  "keywords": [
+    "renovate",
+    "renovateconfig",
+    "renovate-config"
+  ],
+  "devDependencies": {
+    "eslint-config-socifi": "^1.5.0",
+    "jest": "^22.4.3",
+    "renovate": "^12.2.1"
+  },
+  "author": "Michal Ozogan <michal@ozogan.eu>",
+  "license": "MIT",
+  "renovate-config": {
+    "default": {
+      "extends": [
+        "config:base"
+      ],
+      "pinVersions": false,
+      "automerge": true,
+      "major": {
+        "automerge": false
+      },
+      "devDependencies": {
+        "automerge": true
+      },
+      "timezone": "Europe/Prague",
+      "schedule": [
+        "after 8am on monday"
+      ]
+    }
+  }
+}
