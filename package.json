@@ -1,6 +1,6 @@
 {
   "name": "renovate-config-fabulator",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Fabulator personal Renovate config present.",
   "scripts": {
     "test": "node node_modules/jest/bin/jest.js"
@@ -38,7 +38,8 @@
       "timezone": "Europe/Prague",
       "schedule": [
         "after 8am on monday"
-      ]
+      ],
+      "assignees": ["fabulator"]
     }
   }
 }
