@@ -39,7 +39,7 @@
       "schedule": [
         "after 8am on monday"
       ],
-      "assign": ["fabulator"]
+      "assignees": ["fabulator"]
     }
   }
 }
