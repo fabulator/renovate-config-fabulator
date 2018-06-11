@@ -16,9 +16,9 @@
     "renovate-config"
   ],
   "devDependencies": {
-    "eslint-config-socifi": "^1.5.0",
-    "jest": "^22.4.3",
-    "renovate": "^12.2.1"
+    "eslint-config-socifi": "1.5.0",
+    "jest": "22.4.3",
+    "renovate": "12.2.1"
   },
   "author": "Michal Ozogan <michal@ozogan.eu>",
   "license": "MIT",
