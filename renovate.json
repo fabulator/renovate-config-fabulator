@@ -1,5 +1,18 @@
 {
   "extends": [
-    "config:base"
-  ]
+        "config:base"
+      ],
+      "pinVersions": false,
+      "automerge": true,
+      "major": {
+        "automerge": false
+      },
+      "devDependencies": {
+        "automerge": true
+      },
+      "timezone": "Europe/Prague",
+      "schedule": [
+        "after 8am on monday"
+      ],
+      "assignees": ["fabulator"]
 }
