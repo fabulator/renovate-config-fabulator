@@ -18,7 +18,7 @@
   "devDependencies": {
     "@socifi/eslint-config": "^2.5.0",
     "jest": "^24.0.0",
-    "renovate": "^15.0.0"
+    "renovate": "^16.0.0"
   },
   "author": "Michal Ozogan <michal@ozogan.eu>",
   "license": "MIT",
