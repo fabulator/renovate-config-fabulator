@@ -1,4 +1,4 @@
-const { validateConfig } = require('renovate/lib/config/validation');
+const { validateConfig } = require('renovate/dist/config/validation');
 const pkg = require('../package.json');
 
 const configs = pkg['renovate-config'];
