@@ -1,18 +1,45 @@
 {
-  "extends": [
+    "extends": [
         "config:base"
-      ],
-      "pinVersions": false,
-      "automerge": true,
-      "major": {
+    ],
+    "stabilityDays": 3,
+    "commitMessageAction": "Changed: Update",
+    "packageRules": [
+        {
+            "depTypeList": [
+                "devDependencies"
+            ],
+            "commitMessageTopic": "dev dependency {{depName}}",
+            "commitMessageSuffix": "NO_RELEASE",
+            "major": {
+                "automerge": true
+            }
+        },
+        {
+            "depTypeList": [
+                "dependencies"
+            ],
+            "updateTypes": [
+                "major"
+            ],
+            "commitMessageSuffix": "BREAKING"
+        }
+    ],
+    "prCreation": "not-pending",
+    "rebaseStalePrs": true,
+    "rangeStrategy": "bump",
+    "automerge": true,
+    "major": {
         "automerge": false
-      },
-      "devDependencies": {
-        "automerge": true
-      },
-      "timezone": "Europe/Prague",
-      "schedule": [
-        "after 5am on monday"
-      ],
-      "assignees": ["fabulator"]
+    },
+    "timezone": "Europe/Prague",
+    "schedule": [
+        "after 5am"
+    ],
+    "assignees": [
+        "fabulator"
+    ],
+    "reviewers": [
+        "fabulator"
+    ]
 }

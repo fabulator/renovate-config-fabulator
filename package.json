@@ -1,49 +1,73 @@
 {
-  "name": "renovate-config-fabulator",
-  "version": "1.1.0",
-  "description": "Fabulator personal Renovate config present.",
-  "scripts": {
-    "test": "jest"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/fabulator/renovate-config-fabulator.git"
-  },
-  "homepage": "https://github.com/fabulator/renovate-config-fabulator",
-  "keywords": [
-    "renovate",
-    "renovateconfig",
-    "renovate-config"
-  ],
-  "devDependencies": {
-    "@socifi/eslint-config": "^2.5.0",
-    "jest": "^24.0.0",
-    "renovate": "^17.0.0"
-  },
-  "author": "Michal Ozogan <michal@ozogan.eu>",
-  "license": "MIT",
-  "renovate-config": {
-    "default": {
-      "extends": [
-        "config:base"
-      ],
-      "prCreation": "not-pending",
-      "rebaseStalePrs": true,
-      "rangeStrategy": "bump",
-      "automerge": true,
-      "major": {
-        "automerge": false
-      },
-      "timezone": "Europe/Prague",
-      "schedule": [
-        "after 7am on monday"
-      ],
-      "assignees": [
-        "fabulator"
-      ],
-      "reviewers": [
-        "fabulator"
-      ]
+    "name": "renovate-config-fabulator",
+    "version": "1.1.0",
+    "description": "Fabulator personal Renovate config present.",
+    "scripts": {
+        "test": "jest"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/fabulator/renovate-config-fabulator.git"
+    },
+    "homepage": "https://github.com/fabulator/renovate-config-fabulator",
+    "keywords": [
+        "renovate",
+        "renovateconfig",
+        "renovate-config"
+    ],
+    "devDependencies": {
+        "@socifi/eslint-config": "^2.9.0",
+        "@socifi/commitlint-config": "^1.1.0",
+        "jest": "^24.9.0",
+        "renovate": "^19.64.1"
+    },
+    "author": "Michal Ozogan <michal@ozogan.eu>",
+    "license": "MIT",
+    "renovate-config": {
+        "default": {
+            "extends": [
+                "config:base"
+            ],
+            "stabilityDays": 3,
+            "commitMessageAction": "Changed: Update",
+            "packageRules": [
+                {
+                    "depTypeList": [
+                        "devDependencies"
+                    ],
+                    "commitMessageTopic": "dev dependency {{depName}}",
+                    "commitMessageSuffix": "NO_RELEASE",
+                    "major": {
+                        "automerge": true
+                    }
+                },
+                {
+                    "depTypeList": [
+                        "dependencies"
+                    ],
+                    "updateTypes": [
+                        "major"
+                    ],
+                    "commitMessageSuffix": "BREAKING"
+                }
+            ],
+            "prCreation": "not-pending",
+            "rebaseStalePrs": true,
+            "rangeStrategy": "bump",
+            "automerge": true,
+            "major": {
+                "automerge": false
+            },
+            "timezone": "Europe/Prague",
+            "schedule": [
+                "after 5am"
+            ],
+            "assignees": [
+                "fabulator"
+            ],
+            "reviewers": [
+                "fabulator"
+            ]
+        }
     }
-  }
 }
