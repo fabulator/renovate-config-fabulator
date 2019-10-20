@@ -16,10 +16,11 @@
         "renovate-config"
     ],
     "devDependencies": {
-        "@socifi/eslint-config": "^2.9.0",
         "@socifi/commitlint-config": "^1.1.0",
+        "@socifi/eslint-config": "^2.9.0",
         "jest": "^24.9.0",
-        "renovate": "^19.64.1"
+        "renovate": "^19.64.1",
+        "semantic-release-config-fabulator": "^1.2.0"
     },
     "author": "Michal Ozogan <michal@ozogan.eu>",
     "license": "MIT",
