@@ -1,6 +1,11 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [1.2.1] 2019-10-20
+### Fixed
+- [eefec2c](git+https://github.com/fabulator/renovate-config-fabulator/commit/eefec2c87ad4f70015e34ae85431fcf9820f3edc) Readme badge
+- [eefec2c](git+https://github.com/fabulator/renovate-config-fabulator/commit/eefec2c87ad4f70015e34ae85431fcf9820f3edc) Remove travis ci
+
 ## [1.2.0] 2019-10-20
 ### Added
 - [71ab7ee](git+https://github.com/fabulator/renovate-config-fabulator/commit/71ab7ee3c8a3022ced9e7ce68c37da2ca3e606b8) Automatic semantic releasing
