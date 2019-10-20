@@ -3,7 +3,8 @@
     "version": "1.1.0",
     "description": "Fabulator personal Renovate config present.",
     "scripts": {
-        "test": "jest"
+        "test": "jest",
+        "release": "semantic-release"
     },
     "repository": {
         "type": "git",
