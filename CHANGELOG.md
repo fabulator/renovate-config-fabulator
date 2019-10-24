@@ -1,6 +1,14 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [1.3.0] 2019-10-24
+### Fixed
+- [6b8be69](https://github.com/fabulator/renovate-config-fabulator/commit/6b8be6905ced8569873e2566d343acef23a22a8e) Deploy on change of bulding packages.
+
+### Changed
+- [6a39eff](https://github.com/fabulator/renovate-config-fabulator/commit/6a39eff82f6ca43dd6fda7883afd1b91f4afd710) Update dev dependency @socifi/eslint-config to ^2.10.0 
+- [f34cd6e](https://github.com/fabulator/renovate-config-fabulator/commit/f34cd6e51011bcfc3c72d86d0d183baab11305b9) Update dev dependency semantic-release-config-fabulator to ^1.3.2 
+
 ## [1.2.1] 2019-10-20
 ### Fixed
 - [eefec2c](git+https://github.com/fabulator/renovate-config-fabulator/commit/eefec2c87ad4f70015e34ae85431fcf9820f3edc) Readme badge
