@@ -23,6 +23,11 @@
                 "major"
             ],
             "commitMessageSuffix": "BREAKING"
+        },
+        {
+            "packageNames": ["@socifi/rollup-config", "@socifi/babel-config"],
+            "commitMessageSuffix": "",
+            "stabilityDays": 0
         }
     ],
     "prCreation": "not-pending",
