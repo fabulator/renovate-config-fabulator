@@ -30,9 +30,15 @@
             "extends": [
                 "config:base"
             ],
-            "stabilityDays": 3,
+            "stabilityDays": 1,
             "commitMessageAction": "Changed: Update",
             "packageRules": [
+                {
+                    "updateTypes": [
+                        "patch"
+                    ],
+                    "commitMessageAction": "Fixed: Update"
+                },
                 {
                     "depTypeList": [
                         "devDependencies"
@@ -50,7 +56,8 @@
                     "updateTypes": [
                         "major"
                     ],
-                    "commitMessageSuffix": "BREAKING"
+                    "commitMessageSuffix": "BREAKING",
+                    "stabilityDays": 3
                 },
                 {
                     "packageNames": [
@@ -63,7 +70,7 @@
             ],
             "prCreation": "not-pending",
             "rebaseStalePrs": true,
-            "rangeStrategy": "bump",
+            "rangeStrategy": "update-lockfile",
             "automerge": true,
             "major": {
                 "automerge": false
