@@ -1,6 +1,12 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [1.4.0] 2019-11-09
+### Changed
+- [248569e](https://github.com/fabulator/renovate-config-fabulator/commit/248569e61fa37b14541d27c0479ead6cc8ab8e6f) Stability days => 1
+- [248569e](https://github.com/fabulator/renovate-config-fabulator/commit/248569e61fa37b14541d27c0479ead6cc8ab8e6f) Keep config in package.json
+- [248569e](https://github.com/fabulator/renovate-config-fabulator/commit/248569e61fa37b14541d27c0479ead6cc8ab8e6f) Range strategy to update lock file.
+
 ## [1.3.0] 2019-10-24
 ### Fixed
 - [6b8be69](https://github.com/fabulator/renovate-config-fabulator/commit/6b8be6905ced8569873e2566d343acef23a22a8e) Deploy on change of bulding packages.
