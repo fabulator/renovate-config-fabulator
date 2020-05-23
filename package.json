@@ -4,6 +4,7 @@
     "description": "Fabulator personal Renovate config present.",
     "scripts": {
         "test": "jest",
+        "lint": "eslint ./tests",
         "release": "semantic-release"
     },
     "repository": {
@@ -18,9 +19,9 @@
     ],
     "devDependencies": {
         "@socifi/commitlint-config": "^1.1.0",
-        "@socifi/eslint-config": "^2.10.0",
-        "jest": "^24.9.0",
-        "renovate": "^19.64.1",
+        "@socifi/eslint-config": "^2.10.2",
+        "jest": "^26.0.1",
+        "renovate": "^20.2.3",
         "semantic-release-config-fabulator": "^1.3.2"
     },
     "author": "Michal Ozogan <michal@ozogan.eu>",
@@ -30,10 +31,14 @@
             "extends": [
                 "config:base"
             ],
+            "enabled": true,
             "stabilityDays": 1,
             "commitMessageAction": "Changed: Update",
             "packageRules": [
                 {
+                    "depTypeList": [
+                        "dependencies"
+                    ],
                     "updateTypes": [
                         "patch"
                     ],
@@ -69,7 +74,6 @@
                 }
             ],
             "prCreation": "not-pending",
-            "rebaseStalePrs": true,
             "rangeStrategy": "update-lockfile",
             "automerge": true,
             "major": {
