@@ -1,6 +1,14 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [1.5.0] 2020-05-23
+### Changed
+- [ba1ff5a](https://github.com/fabulator/renovate-config-fabulator/commit/ba1ff5a0c80484f0f158a9949f02d364bb2a4536) Update packages
+
+### Fixed
+- [ba1ff5a](https://github.com/fabulator/renovate-config-fabulator/commit/ba1ff5a0c80484f0f158a9949f02d364bb2a4536) Linter
+- [ba1ff5a](https://github.com/fabulator/renovate-config-fabulator/commit/ba1ff5a0c80484f0f158a9949f02d364bb2a4536) Updating patch releases
+
 ## [1.4.0] 2019-11-09
 ### Changed
 - [248569e](https://github.com/fabulator/renovate-config-fabulator/commit/248569e61fa37b14541d27c0479ead6cc8ab8e6f) Stability days => 1
