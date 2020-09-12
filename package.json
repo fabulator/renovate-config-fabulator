@@ -21,11 +21,11 @@
     "test": "jest"
   },
   "devDependencies": {
-    "commitlint-config-fabulator": "^1.0.0",
-    "eslint-config-fabulator": "^1.0.2",
-    "jest": "^26.1.0",
-    "renovate": "^22.3.1",
-    "semantic-release-config-fabulator": "^2.5.0"
+    "commitlint-config-fabulator": "^1.1.0",
+    "eslint-config-fabulator": "^1.1.1",
+    "jest": "^26.4.2",
+    "renovate": "^23.22.2",
+    "semantic-release-config-fabulator": "^2.6.0"
   },
   "renovate-config": {
     "default": {
@@ -35,6 +35,9 @@
       "enabled": true,
       "stabilityDays": 1,
       "commitMessageAction": "Changed: Update",
+      "lockFileMaintenance": {
+        "enabled": true
+      },
       "packageRules": [
         {
           "depTypeList": [
@@ -45,6 +48,12 @@
             "patch"
           ],
           "enabled": false
+        },
+        {
+          "updateTypes": [
+            "lockFileMaintenance"
+          ],
+          "commitMessageAction": "Fixed: Security lock update"
         },
         {
           "depTypeList": [
