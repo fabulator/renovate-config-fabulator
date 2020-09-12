@@ -36,7 +36,10 @@
       "stabilityDays": 1,
       "commitMessageAction": "Changed: Update",
       "lockFileMaintenance": {
-        "enabled": true
+        "enabled": true,
+        "schedule": [
+          "after 5am"
+        ]
       },
       "packageRules": [
         {
