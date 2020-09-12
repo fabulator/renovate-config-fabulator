@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## v1.7.0 (2020-09-12)
+### Changed
+- [3a609c7](https://github.com/fabulator/renovate-config-fabulator/commit/3a609c7c2a349be078589a7d0e7b26b53c8a3355) Enable lock file maintain
+
 ## v1.6.0 (2020-07-25)
 ### Changed
 - [446feb1](https://github.com/fabulator/renovate-config-fabulator/commit/446feb15d057e69ca26ba8a7b7db348f8fb03b1b) Update strategy

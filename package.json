@@ -1,6 +1,6 @@
 {
   "name": "renovate-config-fabulator",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "description": "Fabulator personal Renovate config present.",
   "keywords": [
     "renovate",
