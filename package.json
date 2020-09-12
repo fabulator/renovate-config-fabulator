@@ -56,7 +56,8 @@
           "updateTypes": [
             "lockFileMaintenance"
           ],
-          "commitMessageAction": "Fixed: Security lock update"
+          "commitMessageAction": "Fixed: Update lock for security updated",
+          "automerge": true
         },
         {
           "depTypeList": [
