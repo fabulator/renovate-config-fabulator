@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## v1.6.0 (2020-07-25)
+### Changed
+- [446feb1](https://github.com/fabulator/renovate-config-fabulator/commit/446feb15d057e69ca26ba8a7b7db348f8fb03b1b) Update strategy
+
 ## [1.5.0] 2020-05-23
 ### Changed
 - [ba1ff5a](https://github.com/fabulator/renovate-config-fabulator/commit/ba1ff5a0c80484f0f158a9949f02d364bb2a4536) Update packages
