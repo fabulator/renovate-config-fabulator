@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## v1.7.2 (2020-09-12)
+### Fixed
+- [bf8209f](https://github.com/fabulator/renovate-config-fabulator/commit/bf8209fd8fc027ee98224fcd677c2346afec9714) Set for automerge
+
 ## v1.7.1 (2020-09-12)
 ### Fixed
 - [df50c4a](https://github.com/fabulator/renovate-config-fabulator/commit/df50c4a3250ea24b67d9b39bbe039fbf0be4f74e) Schedule for maintain
