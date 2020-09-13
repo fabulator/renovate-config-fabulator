@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## v1.7.4 (2020-09-13)
+### Fixed
+- [0fc0d1c](https://github.com/fabulator/renovate-config-fabulator/commit/0fc0d1c3df83be8598acda7b50f92e458315b5e6) Update lock file also.
+
 ## v1.7.3 (2020-09-12)
 ### Fixed
 - [d107eb5](https://github.com/fabulator/renovate-config-fabulator/commit/d107eb52c58b5ad89fc1aa115f6cd0edf3ba39ed) Do the lock maintenence only one a week
