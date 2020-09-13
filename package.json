@@ -78,7 +78,7 @@
         }
       ],
       "prCreation": "not-pending",
-      "rangeStrategy": "replace",
+      "rangeStrategy": "update-lockfile",
       "automerge": false,
       "major": {
         "automerge": false
