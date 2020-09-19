@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## v1.7.5 (2020-09-19)
+### Fixed
+- [533d0cf](https://github.com/fabulator/renovate-config-fabulator/commit/533d0cfc9f2bdc271ea74810c6a44e8f88b0863c) Automerge for lock
+
 ## v1.7.4 (2020-09-13)
 ### Fixed
 - [0fc0d1c](https://github.com/fabulator/renovate-config-fabulator/commit/0fc0d1c3df83be8598acda7b50f92e458315b5e6) Update lock file also.
