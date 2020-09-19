@@ -36,12 +36,15 @@
       "stabilityDays": 1,
       "commitMessageAction": "Changed: Update",
       "lockFileMaintenance": {
-        "enabled": true
+        "enabled": true,
+        "automerge": true
       },
       "packageRules": [
         {
           "depTypeList": [
-            "dependencies"
+            "dependencies",
+            "peerDependencies",
+            "devDependencies"
           ],
           "updateTypes": [
             "minor",
@@ -60,6 +63,9 @@
           "depTypeList": [
             "devDependencies"
           ],
+          "updateTypes": [
+            "major"
+          ],
           "commitMessageTopic": "dev dependency {{depName}}",
           "commitMessageSuffix": "NO_RELEASE",
           "major": {
@@ -68,7 +74,8 @@
         },
         {
           "depTypeList": [
-            "dependencies"
+            "dependencies",
+            "peerDependencies"
           ],
           "updateTypes": [
             "major"
