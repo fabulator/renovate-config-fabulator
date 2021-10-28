@@ -30,7 +30,8 @@
   "renovate-config": {
     "default": {
       "extends": [
-        "config:base"
+        "config:base",
+        ":dependencyDashboard"
       ],
       "enabled": true,
       "stabilityDays": 1,
