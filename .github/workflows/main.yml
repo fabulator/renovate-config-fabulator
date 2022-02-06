@@ -17,5 +17,5 @@ jobs:
                   npm run test
                   npm run release
               env:
-                  GITHUB_TOKEN: ${{ secrets.GITHUB_BOT_TOKEN }}
+                  GITHUB_TOKEN: ${{ secrets.GHUB_BOT_TOKEN }}
                   NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
