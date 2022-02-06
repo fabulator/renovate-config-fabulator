@@ -21,20 +21,21 @@
     "test": "jest"
   },
   "devDependencies": {
-    "commitlint-config-fabulator": "^1.1.0",
-    "eslint-config-fabulator": "^1.1.1",
-    "jest": "^26.4.2",
-    "renovate": "^23.22.2",
-    "semantic-release-config-fabulator": "^2.6.0"
+    "commitlint-config-fabulator": "^2.1.14",
+    "eslint-config-fabulator": "^1.2.3",
+    "husky": "^7.0.4",
+    "jest": "^27.5.0",
+    "renovate": "^31.68.0",
+    "semantic-release-config-fabulator": "^3.2.13"
   },
   "renovate-config": {
     "default": {
       "extends": [
         "config:base",
-        ":dependencyDashboard"
+        ":disableDependencyDashboard"
       ],
       "enabled": true,
-      "stabilityDays": 1,
+      "stabilityDays": 3,
       "commitMessageAction": "Changed: Update",
       "lockFileMaintenance": {
         "enabled": true,
@@ -42,29 +43,29 @@
       },
       "packageRules": [
         {
-          "depTypeList": [
+          "matchDepTypes": [
             "dependencies",
             "peerDependencies",
             "devDependencies"
           ],
-          "updateTypes": [
+          "matchUpdateTypes": [
             "minor",
             "patch"
           ],
           "enabled": false
         },
         {
-          "updateTypes": [
+          "matchUpdateTypes": [
             "lockFileMaintenance"
           ],
-          "commitMessageAction": "Fixed: Update lock for security updated",
+          "commitMessageAction": "Fixed: Update lock to make security bots happy.",
           "automerge": true
         },
         {
-          "depTypeList": [
+          "matchDepTypes": [
             "devDependencies"
           ],
-          "updateTypes": [
+          "matchUpdateTypes": [
             "major"
           ],
           "commitMessageTopic": "dev dependency {{depName}}",
@@ -74,11 +75,11 @@
           }
         },
         {
-          "depTypeList": [
+          "matchDepTypes": [
             "dependencies",
             "peerDependencies"
           ],
-          "updateTypes": [
+          "matchUpdateTypes": [
             "major"
           ],
           "commitMessageSuffix": "BREAKING",
@@ -86,8 +87,8 @@
         }
       ],
       "prCreation": "not-pending",
-      "rangeStrategy": "update-lockfile",
-      "automerge": false,
+      "rangeStrategy": "bump",
+      "automerge": true,
       "major": {
         "automerge": false
       },

@@ -14,6 +14,7 @@ jobs:
             - name: NPM Build and Test
               run: |
                   npm ci
+                  npm run test
                   npm run release
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_BOT_TOKEN }}
