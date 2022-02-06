@@ -1,6 +1,13 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## v1.8.0 (2022-02-06)
+### Changed
+- [b61e606](https://github.com/fabulator/renovate-config-fabulator/commit/b61e606fd5e75236fc9d97947db3965c90e7af45) Disable renovate dashboard.
+
+### Added
+- [d375721](https://github.com/fabulator/renovate-config-fabulator/commit/d375721b0c04a7c8a3b99c3f404d0cd7fe88e846) Dependency dashboard
+
 ## v1.7.5 (2020-09-19)
 ### Fixed
 - [533d0cf](https://github.com/fabulator/renovate-config-fabulator/commit/533d0cfc9f2bdc271ea74810c6a44e8f88b0863c) Automerge for lock
