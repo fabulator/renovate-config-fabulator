@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## v1.10.0 (2022-04-02)
+### Changed
+- [4fa86aa](https://github.com/fabulator/renovate-config-fabulator/commit/4fa86aaa870b4574923f153037633b01af1312b9) Do not release changes in Github flow
+
 ## v1.9.0 (2022-04-02)
 ### Changed
 - [66b07ee](https://github.com/fabulator/renovate-config-fabulator/commit/66b07eee84dd884cc10ac20b01b98472157532bb) Do not release lock file updated.
