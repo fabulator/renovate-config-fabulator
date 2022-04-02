@@ -58,7 +58,7 @@
           "matchUpdateTypes": [
             "lockFileMaintenance"
           ],
-          "commitMessageAction": "Fixed: Update lock to make security bots happy.",
+          "commitMessageAction": "Fixed: Update lock file to make security bots happy. NO_RELEASE EXCLUDE",
           "automerge": true
         },
         {
