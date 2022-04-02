@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## v1.9.0 (2022-04-02)
+### Changed
+- [66b07ee](https://github.com/fabulator/renovate-config-fabulator/commit/66b07eee84dd884cc10ac20b01b98472157532bb) Do not release lock file updated.
+
 ## v1.8.0 (2022-02-06)
 ### Changed
 - [b61e606](https://github.com/fabulator/renovate-config-fabulator/commit/b61e606fd5e75236fc9d97947db3965c90e7af45) Disable renovate dashboard.
