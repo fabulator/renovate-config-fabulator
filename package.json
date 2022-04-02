@@ -55,6 +55,10 @@
           "enabled": false
         },
         {
+          "matchManagers": ["github-actions"],
+          "commitMessageAction": "Changed: Update Github Flow NO_RELEASE"
+        },
+        {
           "matchUpdateTypes": [
             "lockFileMaintenance"
           ],
