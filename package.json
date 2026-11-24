@@ -15,28 +15,29 @@
   "license": "MIT",
   "author": "Michal Ozogan <michal@ozogan.eu>",
   "scripts": {
-    "lint": "eslint ./ --ext .js --ext .json",
+    "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix",
     "release": "semantic-release",
-    "test": "jest"
+    "test": "node --test tests/*.test.mjs"
   },
   "devDependencies": {
-    "commitlint-config-fabulator": "^2.1.14",
-    "eslint-config-fabulator": "^1.2.3",
-    "husky": "^7.0.4",
-    "jest": "^27.5.0",
-    "renovate": "^31.68.0",
-    "semantic-release-config-fabulator": "^3.2.13"
+    "commitlint-config-fabulator": "^6.1.0",
+    "eslint": "^10.15.0",
+    "eslint-config-fabulator": "^6.0.1",
+    "renovate": "^44.259.0",
+    "semantic-release-config-fabulator": "^8.0.1"
   },
   "renovate-config": {
     "default": {
       "extends": [
-        "config:base",
+        "config:recommended",
         ":disableDependencyDashboard"
       ],
       "enabled": true,
-      "stabilityDays": 3,
+      "minimumReleaseAge": "3 days",
       "commitMessageAction": "Changed: Update",
+      "semanticCommits": "disabled",
+      "commitMessageLowerCase": "never",
       "lockFileMaintenance": {
         "enabled": true,
         "automerge": true
@@ -89,7 +90,7 @@
             "major"
           ],
           "commitMessageSuffix": "BREAKING",
-          "stabilityDays": 3
+          "minimumReleaseAge": "3 days"
         }
       ],
       "prCreation": "not-pending",
