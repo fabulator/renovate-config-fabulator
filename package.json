@@ -91,6 +91,15 @@
           ],
           "commitMessageSuffix": "BREAKING",
           "minimumReleaseAge": "3 days"
+        },
+        {
+          "description": [
+            "Do not update TypeScript to version 7 (native Go port) yet."
+          ],
+          "matchPackageNames": [
+            "typescript"
+          ],
+          "allowedVersions": "<7"
         }
       ],
       "prCreation": "not-pending",
