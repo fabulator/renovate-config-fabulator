@@ -1,6 +1,12 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## v1.11.0 (2026-11-24)
+### Changed
+- [7d02d3d](https://github.com/fabulator/renovate-config-fabulator/commit/7d02d3d3c89223d413752ae5b0e61a26a4924c6c) Prevent Renovate from updating TypeScript to version 7 (#30)
+
+Co-authored-by: Claude Opus 5.5 <noreply@anthropic.com>
+
 ## v1.10.1 (2026-11-24)
 ### Fixed
 - [8be226a](https://github.com/fabulator/renovate-config-fabulator/commit/8be226a0f5d4fdd0eb84bb7894399b11f5eb9b98) Keep Renovate PR titles unchanged and publish via trusted publishing (#28)
