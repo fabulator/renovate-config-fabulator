@@ -1,6 +1,23 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## v1.10.1 (2026-11-24)
+### Fixed
+- [8be226a](https://github.com/fabulator/renovate-config-fabulator/commit/8be226a0f5d4fdd0eb84bb7894399b11f5eb9b98) Keep Renovate PR titles unchanged and publish via trusted publishing (#28)
+
+- disable semanticCommits and commitMessageLowerCase so PR titles keep the
+  "Changed: Update ... " format (Renovate auto-detected semantic
+  commits and lowercased NO_RELEASE to no_release)
+- config:base -> config:recommended, stabilityDays -> minimumReleaseAge
+- renovate 44, semantic-release-config-fabulator 8 (npm trusted publishing via OIDC),
+  commitlint-config-fabulator 6, eslint-config-fabulator 6 + ESLint 10 flat config
+- tests run on node:test (renovate is ESM only), jest removed
+- workflow: id-token: write, persist-credentials: false, checkout/setup-node v7,
+  Node.js 26.13.1, release only on master, concurrency, timeout, full git history
+- regenerate package-lock.json
+
+Co-authored-by: Claude Opus 5.5 <noreply@anthropic.com>
+
 ## v1.10.0 (2022-04-02)
 ### Changed
 - [4fa86aa](https://github.com/fabulator/renovate-config-fabulator/commit/4fa86aaa870b4574923f153037633b01af1312b9) Do not release changes in Github flow
