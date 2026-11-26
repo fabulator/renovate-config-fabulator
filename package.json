@@ -40,7 +40,10 @@
       "commitMessageLowerCase": "never",
       "lockFileMaintenance": {
         "enabled": true,
-        "automerge": true
+        "automerge": true,
+        "extends": [
+          "schedule:monthly"
+        ]
       },
       "packageRules": [
         {
@@ -62,11 +65,15 @@
           "commitMessageAction": "Changed: Update Github Flow NO_RELEASE"
         },
         {
+          "description": [
+            "Lock file maintenance has no release timestamp, so minimumReleaseAge would keep renovate/stability-days pending forever."
+          ],
           "matchUpdateTypes": [
             "lockFileMaintenance"
           ],
           "commitMessageAction": "Fixed: Update lock file to make security bots happy. NO_RELEASE EXCLUDE",
-          "automerge": true
+          "automerge": true,
+          "minimumReleaseAge": null
         },
         {
           "matchDepTypes": [
