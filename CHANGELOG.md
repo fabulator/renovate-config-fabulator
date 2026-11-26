@@ -1,6 +1,15 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## v1.12.0 (2026-11-26)
+### Changed
+- [afeb51d](https://github.com/fabulator/renovate-config-fabulator/commit/afeb51d89e672494eff15006a8633e192b4f51b8) Run lock file maintenance monthly without minimum release age (#31)
+
+Lock file maintenance has no release timestamp, so minimumReleaseAge kept
+the renovate/stability-days check pending forever and the PR never merged.
+
+Co-authored-by: Claude Opus 5.5 <noreply@anthropic.com>
+
 ## v1.11.0 (2026-11-24)
 ### Changed
 - [7d02d3d](https://github.com/fabulator/renovate-config-fabulator/commit/7d02d3d3c89223d413752ae5b0e61a26a4924c6c) Prevent Renovate from updating TypeScript to version 7 (#30)
